@@ -67,3 +67,53 @@ h2 {
 }
 
 /*  */
+
+/* Section Nos Vedettes */
+
+#famous_animals {
+	max-width: 1400px;
+	margin: auto;
+
+	text-align: center;
+}
+
+#animals {
+	display: flex;
+
+	gap: 10px;
+}
+
+.animal {
+	flex-basis: 0;
+	flex-grow: 1;
+
+	background-color: var(--primary-color);
+	padding: 10px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.img_container {
+	width: 75%;
+	height: 200px;
+
+	border: white 3px solid;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.animal p {
+	margin-top: 10px;
+
+	color: white;
+	font-family: ChesterZoo;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+/*  */
