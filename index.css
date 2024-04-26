@@ -116,4 +116,20 @@ img {
 	font-size: 25px;
 }
 
+@media screen and (max-width: 600px) {
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	main {
+		padding: 0 10px;
+	}
+
+	#animals {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
 /*  */
