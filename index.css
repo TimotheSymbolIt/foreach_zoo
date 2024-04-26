@@ -1,0 +1,144 @@
+@font-face {
+	font-family: ChesterZoo;
+	src: url(./assets/fonts/ChesterZoo.ttf);
+}
+
+:root {
+	--primary-color: #a8a33a;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+header {
+	background-color: var(--primary-color);
+	color: white;
+	font-family: ChesterZoo;
+	padding: 10px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header ul {
+	display: flex;
+	list-style: none;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+.nav_link {
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.nav_link:hover {
+	font-weight: bold;
+}
+
+/*  */
+
+/* Section A propos */
+
+#about {
+	text-align: center;
+
+	max-width: 1400px;
+	margin: auto;
+	padding: 30px 0px;
+}
+
+h2 {
+	font-family: ChesterZoo;
+	text-decoration: underline;
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+#about p {
+	text-align: justify;
+}
+
+/*  */
+
+/* Section Nos Vedettes */
+
+#famous_animals {
+	max-width: 1400px;
+	margin: auto;
+
+	text-align: center;
+}
+
+#animals {
+	display: flex;
+
+	gap: 10px;
+}
+
+.animal {
+	flex-basis: 0;
+	flex-grow: 1;
+
+	background-color: var(--primary-color);
+	padding: 10px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.img_container {
+	width: 75%;
+	height: 200px;
+
+	border: white 3px solid;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.animal p {
+	margin-top: 10px;
+
+	color: white;
+	font-family: ChesterZoo;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	main {
+		padding: 0 10px;
+	}
+
+	#animals {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/*  */
