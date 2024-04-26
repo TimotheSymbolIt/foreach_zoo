@@ -1,0 +1,44 @@
+@font-face {
+	font-family: ChesterZoo;
+	src: url(./assets/fonts/ChesterZoo.ttf);
+}
+
+:root {
+	--primary-color: #a8a33a;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: var(--primary-color);
+	color: white;
+	font-family: ChesterZoo;
+	padding: 10px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header ul {
+	display: flex;
+	list-style: none;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+.nav_link {
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.nav_link:hover {
+	font-weight: bold;
+}
